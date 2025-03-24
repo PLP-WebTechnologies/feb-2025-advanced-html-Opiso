@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia-Rich Webpage</title>
+    <style>
+        /* Basic Reset and Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1, h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Image Styling */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* Video & Audio Styling */
+        video,
+        audio {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Table Styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* List Styling */
+        ol, ul {
+            margin-left: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            section {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Multimedia-Rich Webpage</h1>
+    </header>
+
+    <!-- Image Embed -->
+    <section>
+        <h2>Embedded Image</h2>
+        <img src="media/1490390250.jpg" alt="Description of the image" width="300">
+    </section>
+
+    <!-- Video Embed -->
+    <section>
+        <h2>Embedded Video</h2>
+        <video width="320" height="240" controls>
+            <source src="media/ANANISIKILIZA SMS skiza 7633771 to 811.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Audio Embed -->
+    <section>
+        <h2>Embedded Audio</h2>
+        <audio controls>
+            <source src="media/Lindah_-_Odongo_Swag_[Official_Music_Video]_sms_skiza_5969252_to_811(128k).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Registration Form with Validation -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a secure password"><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Confirm your password"><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Embedded Table -->
+    <section>
+        <h2>Sample Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td>Capis Okoth</td>
+                <td>25</td>
+                <td>Web Developer</td>
+            </tr>
+            <tr>
+                <td>Jane Shanty</td>
+                <td>24</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Ordered List -->
+    <section>
+        <h2>Favorite Programming Languages</h2>
+        <ol>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>C++</li>
+        </ol>
+    </section>
+
+    <!-- Unordered List -->
+    <section>
+        <h2>Benefits of Web Development</h2>
+        <ul>
+            <li>Creativity and Innovation</li>
+            <li>High Demand for Developers</li>
+            <li>Work from Anywhere</li>
+            <li>Good Salary</li>
+        </ul>
+    </section>
+
+</body>
+</html>
